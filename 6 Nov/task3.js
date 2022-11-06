@@ -3,4 +3,3 @@ for(let x=1; x <= 1000; x++){
     document.write (x+ "<br>");
 }
 }
-    
