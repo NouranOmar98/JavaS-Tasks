@@ -6,4 +6,4 @@ function isOdd(n){
         document.write(true);
     }
 }
-isOdd(3);
+isOdd(9);
