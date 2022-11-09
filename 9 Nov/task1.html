@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .div{
+        
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+<h1> Personal Information</h1> 
+<form>       
+
+<div class="div"><label >Your Name</label><input Type="text" placeholder="Enter Your Name"></div>
+<div class="div"><label >Your Age </label><input Type="text" placeholder="Enter Your Age"></div>
+<div class="div"><label >Your Major </label><input Type="text" placeholder=" Enter Your Major"></div>
+<div class="div"><label >Your University </label><input Type="text" placeholder="Enter Your University"></div>
+
+<h3> Your Gender : </h3>
+    <div><input type="radio" id="female" value="female" name="gender"><label for="female">female</label></div>
+    <div><input type="radio" id="male" value="male" name="gender"><label for="male">male</label></div>
+
+            <h3>Choose your favourite languages : </h3>
+            <div><input type="checkbox" name="language" id="html" value="html"><label for="html">html</label></div>
+            <div><input type="checkbox" name="language" id="css" value="css"><label for="css">css</label></div>
+            <div><input type="checkbox" name="language" id="javascript" value="javascript"><label for="javascript">javascript</label></div>
+            <br>
+            
+            <h3>Descrip your Self: </h3>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+            <input type="submit" onclick="sub1">
+</form>
+
+<script src="task1.js"></script>
+</body>
+</html>

@@ -28,13 +28,17 @@ function size1(){
     /////////
 
     function Bold (){
-        var z= document.getElementById("Bold1").value;
-        if (z== "Bold"){
+        
+        var z= document.getElementById("Bold1");
+        if (z.checked){
         document.getElementById("paragraph").style.fontWeight="Bold";
         }
-        
+        else{
+            document.getElementById("paragraph").style.fontWeight="normal";
+
+        }  
     }
-   
+
     //////////
 
     function Italic (){
