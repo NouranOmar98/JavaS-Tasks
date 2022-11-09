@@ -2,17 +2,17 @@ document.getElementById("card1").style.display="none";
 
 document.forms[0].onsubmit= function (e) {
     e.preventDefault();
-    var x =document.getElementById("name").value;
-    localStorage.setItem("firstname",x);
+    let name =document.getElementById("name").value;
+    localStorage.setItem("firstname",name);
     //
-    var y =document.getElementById("age").value;
-    localStorage.setItem("age",y); 
+    let age =document.getElementById("age").value;
+    localStorage.setItem("age",age); 
     //
-    var z =document.getElementById("major").value;
-    localStorage.setItem("major",z); 
+    let major =document.getElementById("major").value;
+    localStorage.setItem("major",major); 
     //
-    var q =document.getElementById("university").value;
-    localStorage.setItem("university",q); 
+    let university =document.getElementById("university").value;
+    localStorage.setItem("university", university); 
     //
     document.getElementById("card1").style.display="block";
     document.getElementById("card1").style.background="Pink";
@@ -31,11 +31,20 @@ document.forms[0].onsubmit= function (e) {
     let langs = []; 
     for(let i =0 ; i <languages.length ; i++){
     if(languages[i].checked){
-      langs.push(languages[i].value);
+    langs.push(languages[i].value);
     }
     localStorage.setItem("language",langs);
     }
     //
-
+    let textarea =document.getElementById("textarea").value;
+    localStorage.setItem("textarea",textarea); 
+}
+function getcard(){
+    let name= localStorage.getItem("firstname");
+    let age= localStorage.getItem("age");
+    let major= localStorage.getItem("major");
+    let university = localStorage.getItem("university");
+    let gender = localStorage.getItem("gender");
+    let language = localStorage.getItem("language");
 }
 
