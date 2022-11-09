@@ -8,37 +8,54 @@
 
 <style>
     .div{
-        
+
         width: 280px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
     }
+    
 </style>
 </head>
 <body>
 <h1> Personal Information</h1> 
 <form>       
 
-<div class="div"><label >Your Name</label><input Type="text" placeholder="Enter Your Name"></div>
-<div class="div"><label >Your Age </label><input Type="text" placeholder="Enter Your Age"></div>
-<div class="div"><label >Your Major </label><input Type="text" placeholder=" Enter Your Major"></div>
-<div class="div"><label >Your University </label><input Type="text" placeholder="Enter Your University"></div>
+ <div class="div"><label >Your Name</label><input Type="text" placeholder="Enter Your Name" id="name"></div>
+ <div class="div"><label >Your Age </label><input Type="text" placeholder="Enter Your Age" id="age"></div>
+ <div class="div"><label >Your Major </label><input Type="text" placeholder=" Enter Your Major" id="major"></div>
+ <div class="div"><label >Your University </label><input Type="text" placeholder="Enter Your University" id="university"></div>
 
-<h3> Your Gender : </h3>
-    <div><input type="radio" id="female" value="female" name="gender"><label for="female">female</label></div>
-    <div><input type="radio" id="male" value="male" name="gender"><label for="male">male</label></div>
+ <h3> Your Gender : </h3>
+    <div><input type="radio" id="female" value="female" name="gender" id="female"><label for="female">female</label></div>
+    <div><input type="radio" id="male" value="male" name="gender" id="male"><label for="male">male</label></div>
 
-            <h3>Choose your favourite languages : </h3>
-            <div><input type="checkbox" name="language" id="html" value="html"><label for="html">html</label></div>
-            <div><input type="checkbox" name="language" id="css" value="css"><label for="css">css</label></div>
-            <div><input type="checkbox" name="language" id="javascript" value="javascript"><label for="javascript">javascript</label></div>
-            <br>
-            
-            <h3>Descrip your Self: </h3>
-            <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
-            <input type="submit" onclick="sub1">
+        <h3>Choose your favourite languages : </h3>
+        <div><input type="checkbox" name="language" id="html" value="html"><label for="html">html</label></div>
+        <div><input type="checkbox" name="language" id="css" value="css"><label for="css">css</label></div>
+        <div><input type="checkbox" name="language" id="javascript" value="javascript"><label for="javascript">javascript</label></div>
+        <br>
+        <h3>Descrip your Self: </h3>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea><br><br>
+        <input type="submit" id="sub">
 </form>
+<br>
+<div id="card1">
+    <labe> Name :</label>
+    <span id="firstname"></span><br>
+    <labe> Age :</labe>
+    <span id="age"></span><br>
+    <labe> Major :</labe>
+    <span id="major"></span><br>
+    <labe> Unviersity :</labe>
+    <span id="university"></span><br>
+    <labe> Gender :</labe>
+    <span id="gender"></span><br>
+    <labe>Favourite Language : </labe>
+    <span id="favouritelanguage"></span><br>
+    <labe> Brief Description :</labe>
+    <span id="briefdescription"></span><br>
+</div>
 
 <script src="task1.js"></script>
 </body>
