@@ -38,6 +38,8 @@ document.forms[0].onsubmit= function (e) {
     //
     let textarea =document.getElementById("textarea").value;
     localStorage.setItem("textarea",textarea); 
+    //
+    getcard();
 }
 function getcard(){
     let name= localStorage.getItem("firstname");
@@ -46,5 +48,28 @@ function getcard(){
     let university = localStorage.getItem("university");
     let gender = localStorage.getItem("gender");
     let language = localStorage.getItem("language");
+    let textarea = localStorage.getItem("textarea");
+
+
+    console.log (name)
+
+    let card1 =document.getElementById("card1");
+    card1.innerHTML= `
+    <labe> Name :</label>
+    <span id="firstname">${name}</span><br>
+    <labe> Age :</labe>
+    <span id="age">${age}</span><br>
+    <labe> Major :</labe>
+    <span id="major">${major}</span><br>
+    <labe> Unviersity :</labe>
+    <span id="university">${university}</span><br>
+    <labe> Gender :</labe>
+    <span id="gender">${gender}</span><br>
+    <labe>Favourite Language : </labe>
+    <span id="favouritelanguage">${language}</span><br>
+    <labe> Brief Description :</labe>
+    <span id="briefdescription">${textarea}</span><br>
+    `
 }
+
 
