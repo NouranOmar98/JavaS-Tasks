@@ -5,9 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+        }
+        
+        .divp{
+            border:5px solid rgb(26, 4, 150)  ;
+            width:500px;
+            height:200px;
+        }
+    </style>
 </head>
 <body>
-    
+     <div>
+        <select name="fontfamily" Id="font" onchange="family ()" >
+            <option value="arial"> Arial </option>
+            <option value="cambria"> Cambria </option>
+            <option value="gillSans">Gill Sans</option>
+        </select>
+
+        <select Id="size" onchange="size1 ()" >
+            <option value="25pt">25pt</option>
+            <option value="35pt">35pt</option>
+            <option value="45pt">45pt</option>
+        </select>
+
+        <label> Bold </label><input type="checkbox" value="Bold" Id="Bold1" onchange=" Bold()">
+        <label> Italic </label><input type="checkbox" value="Italic" Id="Italic1" onchange=" Italic()">
+        <label> Underlined </label><input type="checkbox" value="Underlined" Id="Underlined1" onchange=" Underlined()">
+         
+        <br><br>
+        <div class="divp"><p  id="paragraph"> 
+             Hello, My Name Is Nouran Omar :))
+        </div>
+     </div>
     <script src="task3.js"></script>
 </body>
 </html>
