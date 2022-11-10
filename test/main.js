@@ -7,3 +7,5 @@ function myFunction() {
     
     document.getElementById("para").innerHTML += " HELLO EVERYONE";
 }
+
+var text="gmail"

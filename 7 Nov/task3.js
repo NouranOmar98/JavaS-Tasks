@@ -1,4 +1,4 @@
-let shortestLength = 100;
+let shortestLength =100;
 let shortestValue ;
 
 function shorterInArray(arr){
@@ -10,4 +10,4 @@ if(arr[x].length < shortestLength){
     }
     document.write(shortestValue);
 }
-shorterInArray(["alex", "mercer", "madrasa", "rashed2", "emad", "hala"]);
+shorterInArray(["alex", "mercer", "made", "rashed2", "emad", "hala"]);
